@@ -1,52 +1,63 @@
 <script>
   import TeamCard from './TeamCard.svelte';
+  
+  // Import team member images
+  import tomiImage from '$lib/assets/team/tomi.jpg';
+  import bagusImage from '$lib/assets/team/bagus.jpg';
+  import taufiqImage from '$lib/assets/team/taufiq.jpeg';
+  import rafifImage from '$lib/assets/team/rafif.jpg';
+  import maulImage from '$lib/assets/team/maul.jpg';
+  import fayiImage from '$lib/assets/team/fayi.jpg';
+  import rafiImage from '$lib/assets/team/rafi.jpg';
+  import tadoImage from '$lib/assets/team/tado.jpg';
+  import farhanImage from '$lib/assets/team/farhan.jpg';
 
   // Team members data
   const teamMembers = [
     {
       name: "Ahmad Boestomi",
       role: "UI/UX Designer",
-      image: "/src/lib/assets/team/tomi.jpg"
+      image: tomiImage
     },
     {
       name: "Bagus Tio Budi", 
       role: "Product Manager",
-      image: "/src/lib/assets/team/bagus.jpg"
+      image: bagusImage
     },
     {
       name: "Mukhammad Taufiqurrochman",
       role: "System Architectur & Dev Ops", 
-      image: "/src/lib/assets/team/taufiq.jpeg"
+      image: taufiqImage
     },
     {
       name: "Muhammad Rafif",
       role: "System Analyst",
-      image: "/src/lib/assets/team/rafif.jpg"
+      image: rafifImage
     },
     {
       name: "Asmaul Husna",
       role: "Penestration Tester",
-      image: "/src/lib/assets/team/maul.jpg"
+      image: maulImage
     },
     {
       name: "Muhammad Fayyih",
       role: "UI/UX Designer", 
-      image: "/src/lib/assets/team/fayi.jpg"
+      image: fayiImage
     },
     {
       name: "Muhammad Rafiqhul Akhiro",
       role: "Automation",
-      image: "/src/lib/assets/team/rafi.jpg"
+      image: rafiImage
     },
     {
       name: "Muhammad Murtadho",
       role: "Back-End Developer",
-      image: "/src/lib/assets/team/tado.jpg"
+      image: tadoImage
     },
     {
       name: "Farhan Alfaraby",
       role: "Front-End Developer",
-      image: "/src/lib/assets/team/farhan.jpg"
+      image: farhanImage
     }
 
   ];

@@ -3,6 +3,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import ResourceDetail from '$lib/components/ResourceDetail.svelte';
   import CardThumbnail from '$lib/components/ThumbnailCard.svelte';
+  import logo from '$lib/assets/logo.png';
 
   let { data } = $props();
   const { resource } = data;
@@ -44,7 +45,7 @@
           episode="EP01"
           authorName="Kodeflow Team"
           authorRole="Content Creator"
-          authorImage="/src/lib/assets/logo.png"
+          authorImage={logo}
           authorImageAlt="Kodeflow Team"
         />
       </aside>
