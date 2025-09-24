@@ -1,0 +1,319 @@
+<script>
+  export let titleTop = 'Low-code Academy';
+  export let titleMidLeft = '&';
+  export let titleMidRight = 'Your Tech Partner';
+  import TechMarquee from './TechMarquee.svelte';
+</script>
+
+<section class="relative overflow-hidden mt-20">
+  <!-- Background concentric circular lines -->
+  <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+    <div class="concentric-circles">
+      
+      <div class="circle-arc circle-3">
+        <div class="arc-icon icon-3">⚡</div>
+        <div class="arc-icon icon-4">🎯</div>
+      </div>
+      <div class="circle-arc circle-4">
+        <div class="arc-icon icon-5">📱</div>
+      </div>
+
+      <div class="circle-arc circle-6">
+        <div class="arc-icon icon-8">⭐</div>
+      </div>
+      <div class="circle-arc circle-7">
+        <div class="arc-icon icon-9">🌐</div>
+        <div class="arc-icon icon-10">💡</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-16 md:pt-24 pb-12 sm:pb-16 md:pb-24 text-center relative z-10">
+    <h1 class="mt-2 sm:mt-4 md:mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight" style="color: var(--color-text)">
+      {titleTop}
+    </h1>
+
+    <div class="mt-3 sm:mt-4 flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-3 gap-y-1 sm:gap-y-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-[--color-text]">
+      <h1>{titleMidLeft}</h1>
+      <h1>{titleMidRight}</h1>
+    </div>
+
+    <div class="relative inline-block mt-2 sm:mt-3">
+      <h2 class="kodeflow-text-gradient tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Kodeflow</h2>
+      
+    </div>
+
+
+    <p class="mx-auto mt-4 sm:mt-6 max-w-3xl text-sm sm:text-base md:text-lg text-[color:var(--color-text)/0.75] leading-relaxed">
+      <span class="inline">Full-suite development and design partners. We're the all-in-one solution for</span>
+      <span class="mx-1 inline-flex rounded-lg px-2 py-1 text-xs sm:text-sm" style="background-color: var(--color-grey)">enterprise</span>,
+      <span class="mx-1 inline-flex rounded-lg px-2 py-1 text-xs sm:text-sm" style="background-color: var(--color-grey)">ecommerce</span>
+      and
+      <span class="mx-1 inline-flex rounded-lg px-2 py-1 text-xs sm:text-sm" style="background-color: var(--color-grey)">startups</span>.
+    </p>
+
+    <div class="mt-6 sm:mt-8 grid grid-cols-2 sm:flex sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-5 px-4">
+      <a href="/" class="btn-primary w-full sm:w-auto sm:min-w-[140px] text-center">Why Kodeflow?</a>
+      <a href="/" class="btn-secondary w-full sm:w-auto sm:min-w-[140px] text-center">Start a project</a>
+    </div>
+  </div>
+
+  <TechMarquee />
+</section>
+
+<style>
+  .concentric-circles {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle-arc {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 15s ease-in-out infinite;
+    border: 1px solid transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+
+  .circle-3 {
+    width: 600px;
+    height: 600px;
+    border-left-color: rgba(139, 92, 246, 0.25);
+    border-right-color: rgba(139, 92, 246, 0.25);
+    animation-delay: -4s;
+  }
+
+  .circle-4 {
+    width: 750px;
+    height: 750px;
+    border-left-color: rgba(59, 130, 246, 0.22);
+    border-right-color: rgba(59, 130, 246, 0.22);
+    animation-delay: -6s;
+  }
+
+
+  .circle-6 {
+    width: 1050px;
+    height: 1050px;
+    border-left-color: rgba(139, 92, 246, 0.15);
+    border-right-color: rgba(139, 92, 246, 0.15);
+    animation-delay: -10s;
+  }
+
+  .circle-7 {
+    width: 1200px;
+    height: 1200px;
+    border-left-color: rgba(59, 130, 246, 0.12);
+    border-right-color: rgba(59, 130, 246, 0.12);
+    animation-delay: -12s;
+  }
+
+  .arc-icon {
+    position: absolute;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: float 12s ease-in-out infinite;
+  }
+
+  /* Icon positioning */
+  .icon-3 { left: -20px; top: 30%; animation-delay: -2s; }
+  .icon-4 { right: -20px; top: 70%; animation-delay: -3s; }
+  .icon-5 { left: -20px; top: 60%; animation-delay: -4s; }
+  .icon-8 { right: -20px; top: 60%; animation-delay: -7s; }
+  .icon-9 { left: -20px; top: 50%; transform: translateY(-50%); animation-delay: -8s; }
+  .icon-10 { right: -20px; top: 50%; transform: translateY(-50%); animation-delay: -9s; }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Button Styles */
+  .btn-primary, .btn-secondary {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 1;
+    min-height: 44px;
+  }
+
+  .btn-primary {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  /* Hover effects - text remains stationary */
+
+  /* Primary button hover animation */
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+    border-radius: 9999px;
+    z-index: 1;
+  }
+
+  .btn-primary:hover::before {
+    left: 100%;
+  }
+
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-purple-primary), var(--color-purple-light));
+    transition: width 0.3s ease;
+    z-index: -1;
+    border-radius: 9999px;
+  }
+
+  .btn-primary:hover::after {
+    width: 100%;
+  }
+
+  /* Secondary button hover animation */
+  .btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+    transition: left 0.5s ease;
+    border-radius: 9999px;
+    z-index: 1;
+  }
+
+  .btn-secondary:hover::before {
+    left: 100%;
+  }
+
+  .btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-purple-primary), var(--color-purple-dark));
+    transition: width 0.3s ease;
+    z-index: -1;
+    border-radius: 9999px;
+  }
+
+  .btn-secondary:hover::after {
+    width: 100%;
+  }
+
+  .btn-secondary:hover {
+    color: #fff;
+    border-color: transparent;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .circle-3 { width: 400px; height: 400px; }
+    .circle-4 { width: 500px; height: 500px; }
+    .circle-6 { width: 700px; height: 700px; }
+    .circle-7 { width: 800px; height: 800px; }
+    
+    .arc-icon {
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Mobile button adjustments */
+    .btn-primary, .btn-secondary {
+      padding: 14px 24px;
+      font-size: 16px;
+      min-height: 48px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .circle-3 { width: 290px; height: 290px; }
+    .circle-4 { width: 360px; height: 360px; }
+    .circle-6 { width: 500px; height: 500px; }
+    .circle-7 { width: 570px; height: 570px; }
+    
+    .arc-icon {
+      font-size: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Extra small mobile button adjustments */
+    .btn-primary, .btn-secondary {
+      padding: 12px 16px;
+      font-size: 14px;
+      min-height: 44px;
+    }
+  }
+</style>
+
+

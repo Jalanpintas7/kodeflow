@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Import theme colors */
+@import '$lib/theme/colors.css';
+
+@layer base {
+  html, body {
+    background-color: var(--color-primary-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+  }
+  
+  /* Semua heading menggunakan Poppins */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+  
+  /* Teks lainnya menggunakan Inter */
+  p, span, div, a, li, td, th {
+    font-family: var(--font-body);
+  }
+  
+  /* Pastikan class title juga menggunakan Poppins */
+  .title, .heading, .hero-title {
+    font-family: var(--font-display);
+  }
+  
+  /* Font khusus untuk teks Kodeflow */
+  .kodeflow-text {
+    font-family: var(--font-kodeflow);
+    font-weight: 800; /* ExtraBold */
+    color: var(--color-purple-primary);
+  }
+  
+  /* Kodeflow text dengan gradient purple */
+  .kodeflow-text-gradient {
+    font-family: var(--font-kodeflow);
+    font-weight: 800; /* ExtraBold */
+    background: linear-gradient(135deg, var(--color-purple-primary), var(--color-purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

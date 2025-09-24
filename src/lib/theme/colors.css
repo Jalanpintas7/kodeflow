@@ -1,0 +1,43 @@
+/* Brand tokens */
+:root {
+  --color-primary-background: #F7F7F7;
+  --color-text: #262626;
+  --color-text-2: #525252;
+  --color-text-3: #BD0014;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+
+  /* Font families */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-kodeflow: 'Montserrat', system-ui, sans-serif;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-grey: #EBEBEB;
+  --color-black: #000000;
+  --color-muted: #6b7280; /* gray-500 */
+  --color-muted-foreground: #4b5563; /* gray-600 */
+
+  /* Accents (for subtle glows/underlines) */
+  --color-accent: #7c5cff; /* violet */
+  --color-accent-2: #6ee7f9; /* cyan */
+  
+  /* Purple Theme */
+  --color-purple-primary: #701f9b;
+  --color-purple-light: #8b2db8;
+  --color-purple-dark: #5a1a7a;
+  --color-purple-muted: #a855f7;
+  
+  /* Border colors */
+  --color-border-dotted: #E0E0E0;
+}
+
+/* Optional CSS variables for non-Tailwind usage */
+:root {
+  --kf-bg: var(--color-primary-background);
+  --kf-text: var(--color-text);
+}
+
+
