@@ -64,28 +64,28 @@
     </p>
 
     <!-- Stats Card -->
-    <div class="mt-12 flex justify-center">
+    <div class="mt-8 sm:mt-12 flex justify-center">
       <div
-        class="stats-card relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20 max-w-lg w-full mx-4"
+        class="stats-card relative bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20 max-w-lg w-full mx-4"
       >
         <!-- Header -->
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-3 sm:mb-4">
           <div class="flex items-center gap-2">
             <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-            <span class="text-sm font-medium text-gray-700"
+            <span class="text-xs sm:text-sm font-medium text-gray-700"
               >Kodeflow Impact</span
             >
           </div>
-          <div class="text-xs text-gray-500">Always Flowing</div>
+          <div class="text-xs text-gray-500 hidden sm:block">Always Flowing</div>
         </div>
 
         <!-- Main Stats -->
         <div
-          class="bg-gradient-to-r from-slate-800 to-slate-900 text-white rounded-xl p-4 mb-4"
+          class="bg-gradient-to-r from-slate-800 to-slate-900 text-white rounded-xl p-3 sm:p-4 mb-3 sm:mb-4"
         >
-          <div class="flex items-center gap-2 text-sm mb-2">
+          <div class="flex items-center gap-2 text-xs sm:text-sm mb-1 sm:mb-2">
             <span class="text-blue-400">✨</span>
-            <span
+            <span class="leading-tight"
               >Code with Purpose, Flow with Innovation. Built to Transform.</span
             >
           </div>
@@ -93,42 +93,44 @@
 
         <!-- Flow Metrics -->
         <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="flex -space-x-2">
+          <div class="flex items-center gap-2 sm:gap-3">
+            <div class="flex -space-x-1 sm:-space-x-2">
               <div
-                class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
               >
                 3Y
               </div>
               <div
-                class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
               >
                 25+
               </div>
               <div
-                class="w-8 h-8 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
               >
                 50+
               </div>
               <div
-                class="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
+                class="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold border-2 border-white"
               >
                 ∞
               </div>
             </div>
-            <div class="text-sm text-gray-600">
-              <div class="font-medium">Flow Builders</div>
-              <div class="text-xs text-gray-500">Digital Craftsmen</div>
-            </div>
           </div>
 
           <!-- Innovation Score -->
-          <div class="text-right">
-            <div class="flex items-center gap-1 justify-end">
+          <div class="text-xs sm:text-sm text-gray-600">
+            <div class="flex items-center gap-1">
               <span class="text-blue-500">🚀</span>
-              <span class="text-sm font-bold text-blue-600">∞</span>
+              <span class="font-bold text-blue-600">∞</span>
             </div>
             <div class="text-xs text-gray-500">Innovation Flow</div>
+          </div>
+
+          <!-- Flow Builders - hidden on mobile, shown on desktop -->
+          <div class="hidden sm:block text-xs sm:text-sm text-gray-600">
+            <div class="font-medium">Flow Builders</div>
+            <div class="text-xs text-gray-500">Digital Craftsmen</div>
           </div>
         </div>
 
