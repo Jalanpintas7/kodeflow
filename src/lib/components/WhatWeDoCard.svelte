@@ -5,7 +5,7 @@
   export let iconBg = '';
 </script>
 
-<div class="relative w-full max-w-[344px] h-[342px] mx-auto rounded-[28px] bg-white border border-slate-200 shadow-[0_10px_30px_rgba(0,0,0,.06)] overflow-hidden group cursor-pointer">
+<div class="relative w-full sm:px-8 max-w-[344px] h-[342px] md:h-[342px] mx-auto rounded-[28px] bg-white border border-slate-200 shadow-[0_10px_30px_rgba(0,0,0,.06)] overflow-hidden group cursor-pointer">
   <div class="spotlight absolute inset-x-0 -top-2 h-28 pointer-events-none"></div>
 
   <div class="relative h-full flex flex-col items-center justify-center gap-6 pt-6">

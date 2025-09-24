@@ -29,12 +29,12 @@
            </div>
          </div>
 
-        <h3 class="mt-4 text-[22px] font-semibold text-slate-900 text-center">{title}</h3>
-        <p class="mt-2 text-[15px] leading-7 text-slate-600 text-center">{description}</p>
+        <h3 class="mt-4 text-lg sm:text-xl md:text-[22px] font-semibold text-slate-900 text-center">{title}</h3>
+        <p class="mt-2 text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-600 text-center">{description}</p>
 
         <!-- bottom row CTA -->
         <div class="mt-5 flex items-center justify-between">
-          <div class="inline-flex items-center gap-2 text-slate-900 font-medium">
+          <div class="inline-flex items-center gap-2 text-slate-900 font-medium text-sm sm:text-base">
             <span>Learn more</span>
             <svg class="w-4 h-4 transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:rotate-0 -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -48,7 +48,7 @@
         <!-- Long details content (conditional) -->
         {#if showDetails && details}
           <div class="mt-8 pt-6 border-t border-slate-200">
-            <p class="text-[15px] leading-7 text-slate-700">{details}</p>
+            <p class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">{details}</p>
 
             {#if bullets && bullets.length > 0}
               <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -57,7 +57,7 @@
                     <span class="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200">
                       <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                     </span>
-                    <span class="text-[15px] leading-7 text-slate-700">{b}</span>
+                    <span class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">{b}</span>
                   </div>
                 {/each}
               </div>
@@ -66,7 +66,7 @@
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
               {#if deliverables && deliverables.length > 0}
                 <div>
-                  <h4 class="text-sm font-semibold text-slate-900">Deliverables</h4>
+                  <h4 class="text-xs sm:text-sm font-semibold text-slate-900">Deliverables</h4>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {#each deliverables as d}
                       <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-slate-700 text-sm">{d}</span>
@@ -77,7 +77,7 @@
               
               {#if stack && stack.length > 0}
                 <div>
-                  <h4 class="text-sm font-semibold text-slate-900">Technology</h4>
+                  <h4 class="text-xs sm:text-sm font-semibold text-slate-900">Technology</h4>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {#each stack as t}
                       <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-slate-700 text-sm">{t}</span>
@@ -88,23 +88,23 @@
             </div>
 
             <div class="mt-6">
-              <h4 class="text-sm font-semibold text-slate-900">Quick Process</h4>
+              <h4 class="text-xs sm:text-sm font-semibold text-slate-900">Quick Process</h4>
               <ol class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <li class="flex items-start gap-3">
                   <span class="mt-0.5 w-6 h-6 rounded-full bg-slate-900 text-white grid place-items-center text-xs">1</span>
-                  <span class="text-[15px] leading-7 text-slate-700">Discovery & scope – understand goals and priorities</span>
+                  <span class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">Discovery & scope – understand goals and priorities</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="mt-0.5 w-6 h-6 rounded-full bg-slate-900 text-white grid place-items-center text-xs">2</span>
-                  <span class="text-[15px] leading-7 text-slate-700">Design & architecture – define technical foundation</span>
+                  <span class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">Design & architecture – define technical foundation</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="mt-0.5 w-6 h-6 rounded-full bg-slate-900 text-white grid place-items-center text-xs">3</span>
-                  <span class="text-[15px] leading-7 text-slate-700">Iterative implementation – build, review, improve</span>
+                  <span class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">Iterative implementation – build, review, improve</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="mt-0.5 w-6 h-6 rounded-full bg-slate-900 text-white grid place-items-center text-xs">4</span>
-                  <span class="text-[15px] leading-7 text-slate-700">Launch & handover – documentation, training, and support</span>
+                  <span class="text-sm sm:text-[15px] leading-6 sm:leading-7 text-slate-700">Launch & handover – documentation, training, and support</span>
                 </li>
               </ol>
             </div>

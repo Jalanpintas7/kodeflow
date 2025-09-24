@@ -85,7 +85,7 @@
   ];
 </script>
 
-<section class="py-16 sm:py-20">
+<section class="py-16 sm:py-20 md:w-[90%] mx-auto">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-[--color-text]">What we do...</h2>
     <p class="mt-3 text-[--color-text-2] max-w-3xl mx-auto text-sm sm:text-base">

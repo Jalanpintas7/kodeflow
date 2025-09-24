@@ -4,14 +4,14 @@
   export let tags = [];
   export let backgroundImage = '';
   export let screenshotImage = '';
-  export let height = 'h-[260px]'; // Default height, bisa dikustomisasi
+  // Height fixed dan responsive: h-64 (256px) untuk mobile, h-80 (320px) untuk desktop
   export let href = '';
 </script>
 
 <a class="block group cursor-pointer" href={href}>
   <!-- Container Gambar -->
   <div
-    class="relative {height} rounded-[26px] overflow-hidden border border-slate-200 shadow-[0_12px_32px_rgba(0,0,0,.07)] bg-center bg-cover transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_rgba(0,0,0,.15)]"
+    class="relative h-50 sm:h-65 rounded-[26px] overflow-hidden border border-slate-200 shadow-[0_12px_32px_rgba(0,0,0,.07)] bg-center bg-cover transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_rgba(0,0,0,.15)]"
     style="background: {backgroundImage};">
     <!-- overlay warm -->
     <div class="absolute inset-0 bg-gradient-to-b from-orange-50/60 via-rose-50/50 to-white/30 transition-opacity duration-500 group-hover:opacity-80"></div>
